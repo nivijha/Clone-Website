@@ -15,7 +15,7 @@ HTML, CSS, JavaScript
 `git clone https://github.com/nivijha/Clone-Website-clone.git`	
 
 Navigate to the project directory:
-`cd sidcupfamilygolf-clone`
+`cd Clone-Website-clone`
 
 Open index.html in a browser.
 
