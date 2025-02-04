@@ -296,3 +296,37 @@ video{
     width: 12%;
     transform: scaleY(-1);
 }
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#page3>p{
+    font-size: 30px;
+    font-weight: 700;
+    width: 45%;
+    text-align: center;
+    line-height: 1.6;
+}
+
+#page3 img{
+    position: absolute;
+    height: 60px;
+}
+
+#page3 #colon1{
+    left: 20%;
+    top: 25%;
+
+}
+
+#page3 #colon2{
+    right: 20%;
+    bottom: 25%;    
+}
