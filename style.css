@@ -49,6 +49,7 @@ html, body{
 #nav h4{
     text-transform: uppercase;
     font-weight: 500;
+    padding: 4px;
 }
 
 video{
@@ -107,6 +108,39 @@ video{
     font-size: 1.2vw;
     font-weight: 400;
     width: 40%;  
+    
+}
+
+#page1 #arrow{
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    left: -2%;
+    bottom: -2%;
+    border: 2px solid #95c11e;
+    transition: all ease 1s;
+}
+
+#page1 #arrow svg{
+    font-size: 50px;
+    font-weight: 400;
+
+}
+
+#page1 #arrow svg{
+    font-size: 50px;
+    font-weight: 400;
+
+}
+
+#page1 #arrow:hover{
+    scale: 0.4;
+    background-color: #95c11e;
     
 }
 
@@ -210,14 +244,20 @@ video{
     gap: 50px;
     z-index: 10;
     position: relative;
+    perspective: 1000px; 
 }
 
 .card{
-
+    opacity: 1;
     height: 75%;
     width: 22%;
     border-radius: 3%;
     overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    will-change: transform;
+    position: relative;
 }
 
 #card-1{
@@ -239,6 +279,10 @@ video{
     background-size: cover; /* Ensures the image covers the entire box */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; 
+}
+
+.card:hover{
+    transform: rotate3d(1,1,0,20deg);
 }
 
 .overlay{
@@ -269,9 +313,7 @@ video{
     opacity: 1;
 }
 
-.card:hover{
-    transform: rotate3d(-1,-1,0,20deg);
-}
+
 
 #green-div{
     height: 30vh;
@@ -294,7 +336,13 @@ video{
     height: 100%;
     object-fit: cover;
     width: 12%;
-    transform: scaleY(-1);
+}
+
+#green-div #img1{
+    height: 100%;
+    object-fit: cover;
+    width: 12%;
+    transform: scaleX(-1);
 }
 
 #page3{
@@ -329,4 +377,75 @@ video{
 #page3 #colon2{
     right: 20%;
     bottom: 25%;    
+}
+
+#page4{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    background-color: #000  ;
+    position: relative;
+}
+
+.elements{
+    overflow: hidden;
+    height: 70%;
+    width: 25%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.elements h2{
+    height: 100%;
+    width: 100%;
+    background-color: #95c11e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    white-space: nowrap;
+    color: #000;
+    position: absolute;
+    z-index: 10;
+    transition: all ease 0.5s;
+}
+
+.elements img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.elements:hover h2{
+    color: white;
+    background-color: transparent;
+}
+
+.elements:hover img{
+    scale: 1;
+}
+
+#page4 h1{
+    position: absolute;
+    font-size: 84px;
+    top: -20%;
+    font-weight: 900;
+    color: #000;
+    -webkit-text-stroke: 2px white;
+}
+
+#footer{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to left bottom, #27A535, #A2D221);
+    position: relative;
+}
+
+#footer img{
+    height: 35%;
+    position: absolute;
+    
 }
